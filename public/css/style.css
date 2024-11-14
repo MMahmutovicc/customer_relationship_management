@@ -1,0 +1,353 @@
+body {
+    font-size: 15px;
+    background: hsl(180, 52%, 96%);
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 50px;
+}
+
+tbody tr {
+    background-color: white;
+    line-height: 100px;
+    box-shadow: 4px 4px 7px hsl(180, 8%, 52%);
+    border-radius: 5px;
+}
+
+td:first-child,
+th:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+td:last-child,
+th:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+li a {
+    display: block;
+    color: hsl(180, 52%, 96%);
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover:not(.active) {
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+}
+
+li a.active {
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+}
+
+li button {
+    display: block;
+    border: none;
+    background-color: hsl(180, 29%, 50%);
+    color: hsl(180, 52%, 96%);
+    padding: 15px 30px;
+    text-decoration: none;
+    width: 100%;
+    text-align: left;
+    font-family: "Spartan", sans-serif;
+    font-weight: 700;
+}
+
+#signoutbutton:hover {
+    background-color: hsl(180, 52%, 96%);
+    color: hsl(180, 29%, 50%);
+}
+
+.header {
+    padding: 70px;
+    background: hsl(55, 29%, 50%);
+    background-image: url("images/bg-header-desktop.svg");
+}
+
+.body {
+    padding-top: 40px;
+    padding-bottom: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.title {
+    font-family: "Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.rest {
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    color: hsl(180, 8%, 52%);
+}
+
+#col-1 {
+    position: fixed;
+    overflow-x: hidden;
+    width: 20%;
+    float: left;
+    height: 100%;
+    margin: 0;
+    padding-top: 140px;
+    top: 0;
+    left: 0;
+    background-color: hsl(180, 29%, 50%);
+    font-family: "Spartan", sans-serif;
+    font-weight: 700;
+    color: hsl(180, 52%, 96%);
+    text-align: left;
+}
+
+#col-2 {
+    position: relative;
+    width: 80%;
+    float: right;
+    height: 100%;
+}
+
+input[type="text"],
+[type="email"],
+[type="password"],
+[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-family: "Spartan", sans-serif;
+    font-weight: 400;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+}
+
+input[type="submit"] {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+}
+
+input[type="submit"]:hover {
+    background-color: hsl(180, 8%, 52%);
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type="submit"] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+.signinform {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    padding-left: 700px;
+    padding-right: 700px;
+}
+
+.signinheading {
+    text-align: center;
+    padding-top: 100px;
+    font-family: "Spartan", sans-serif;
+    font-weight: 700;
+    color: hsl(180, 29%, 50%);
+    text-shadow: 1px 1px hsl(180, 14%, 20%);
+}
+
+#signinsubmit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(180, 29%, 50%);
+    border-radius: 3px;
+    line-height: 35px;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+#signinsubmit:hover {
+    background-color: hsl(180, 8%, 52%);
+}
+
+.thumb-image {
+    width: 50px;
+}
+
+.update-image {
+    width: 120px;
+}
+
+.button-details {
+    line-height: 15px;
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.button-details:hover {
+    background-color: hsl(180, 8%, 52%);
+    color: white;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: hsl(180, 29%, 50%);
+    padding: 20px;
+}
+
+.view-title {
+    text-align: center;
+    padding-top: 100px;
+    font-family: "Spartan", sans-serif;
+    font-weight: 700;
+    color: hsl(180, 29%, 50%);
+    text-shadow: 1px 1px hsl(180, 14%, 20%);
+}
+
+.view-title2 {
+    text-align: center;
+    padding-top: 10px;
+    font-family: "Spartan", sans-serif;
+    font-weight: 300;
+    color: black;
+    font-size: 20px;
+}
+
+.view-title3 {
+    text-align: center;
+    padding-top: 10px;
+    font-family: "Spartan", sans-serif;
+    font-weight: 300;
+    color: black;
+    font-size: 15px;
+}
+
+.view-description {
+    text-align: center;
+    padding-top: 100px;
+    font-family: "Spartan", sans-serif;
+    font-weight: 300;
+    color: black;
+    font-size: 15px;
+}
+
+.view-title-app {
+    text-align: center;
+    padding-top: 100px;
+    font-family: "Spartan", sans-serif;
+    font-weight: 700;
+    color: hsl(180, 29%, 50%);
+    text-shadow: 1px 1px hsl(180, 14%, 20%);
+    font-size: 20px;
+}
+
+.col-app {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+.col-ad {
+    position: relative;
+    width: 50%;
+    float: right;
+    height: 100%;
+}
+
+.signinbutton {
+    background: hsl(180, 29%, 50%);
+    line-height: 15px;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-family: "Spartan", sans-serif;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.modal {
+    display: block;
+}
+
+#modalbtn {
+    margin: 0 0;
+}
+
+#col-1 {
+    height: 100vh;
+}
+
+.backdrop {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+}
